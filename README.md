@@ -1,6 +1,6 @@
-# hello react
+# omdb demo
 
-Trying react
+fetch a movie from [omdb api](https://www.omdbapi.com/)
 
 Thanks to the magic of free hosting, you can [view this on the internet](https://laughing-snyder-89a6c6.netlify.app/)
 
