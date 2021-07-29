@@ -27,7 +27,7 @@ bus.on(evs.movie.response, (mov) => {
 // Display ‘Movie Not Found” if the movie you searched was not returned from the API.
 // Below the search field, display the title, the year released, and the plot.
 // Display the genres of the movie as a list.
- 
+
 // omdb api
 // api key -- 922db138
 
@@ -47,7 +47,7 @@ function App () {
         ev.preventDefault()
         var title = ev.target.elements['title'].value
 
-        fetch(`http://www.omdbapi.com/?apikey=922db138&t=${title}`)
+        fetch(`https://www.omdbapi.com/?apikey=922db138&t=${title}`)
             .then(res => {
                 console.log('api res', res)
                 if (!res.ok) res.text().then(t => console.log('t', t))
