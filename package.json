@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "start": "npm run build && concurrently --kill-others \"npm run serve\" \"npm run watch-sass\"",
+    "serve": "budo src/index.js:bundle.js --dir=public/ --live --pushstate --open -- -t babelify -p esmify -p common-shakeify -dv",
+    "build": "npm run copy && npm run build-js && npm run build-sass",
+    "build-sass": "sass src/style/main.scss public/style.css",
+    "build-js": "browserify -p esmify -p common-shakeify -t babelify -t unassertify -t uglifyify --debug src/index.js > public/bundle.js",
+    "watch-sass": "sass --watch src/style/main.scss public/style.css",
+    "copy": "cp src/index.html public"
+  },
+  "dependencies": {
+    "@nichoth/events": "^1.1.2",
+    "htm": "^3.1.0",
+    "observ": "^0.2.0",
+    "observ-struct": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "babel-plugin-htm": "^3.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "budo": "^11.6.4",
+    "common-shakeify": "^0.6.2",
+    "concurrently": "^6.2.0",
+    "esmify": "^2.1.1",
+    "sass": "^1.36.0",
+    "uglifyify": "^5.0.2",
+    "unassertify": "^2.1.1"
+  }
+}

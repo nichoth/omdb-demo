@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    ["htm", {
+      "pragma": "React.createElement"
+    }]
+  ]
+}
+
