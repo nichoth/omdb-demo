@@ -2,7 +2,7 @@
 
 Trying react
 
-Thanks to the magic of free hosting, you can [view this on the internet](https://serene-brattain-29acd8.netlify.app/).
+Thanks to the magic of free hosting, you can [view this on the internet](https://laughing-snyder-89a6c6.netlify.app/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7e929810-5e49-4a9f-90f8-b7eed7ac76e5/deploy-status)](https://app.netlify.com/sites/serene-brattain-29acd8/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f930881b-b504-464d-9cea-9aa3c6e7185c/deploy-status)](https://app.netlify.com/sites/laughing-snyder-89a6c6/deploys)
 
